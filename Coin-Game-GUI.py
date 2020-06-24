@@ -23,13 +23,15 @@ def game():
 
     done = 1
 
-    while done:
-        e = Entry(root)
-        e.pack
+    
+    e = Entry(root)
+    e.pack
 
-        btn = Button(root, command=cmd, text="Submit Bet").pack()
+    btn = Button(root, command=cmd, text="Submit Bet").pack()
 
-        lbl = Label(root, text="")
-        lbl.pack()
+    lbl = Label(root, text="")
+    lbl.pack()
+
+    done -= 1
 
 mainloop()
